@@ -1,3 +1,6 @@
+В папке xtree лежит скомпилированная версия 
+В файле Readme.docx инструкция по использованию приложения
+
 # electron-quick-start
 
 **Clone and run for a quick way to see Electron in action.**
