@@ -1,0 +1,351 @@
+
+body{
+	background-color: #3F49DB;
+	margin: 0;
+	overflow:  hidden; 
+}
+
+.salut{
+	display: none;
+	-webkit-background-size: 25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 20rem;
+	width: 25rem;
+	position: absolute;
+}
+
+.salut1{background-image: url(salut/salut2.gif);left :2rem;	top: 2rem;}
+.salut2{background-image: url(salut/salut3.gif);left :70rem;top: 2rem;}
+.salut3{background-image: url(salut/salut4.gif);left :75rem;top: 30rem;}
+.salut4{background-image: url(salut/salut5.gif);left :15rem;top: 33rem;
+}
+
+
+.sp{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+	transition: all 0.2s;
+	box-sizing: content-box; 
+	font-size: 35px;
+	text-align: center;
+	font-weight: bold;
+	overflow: hidden;
+	position: absolute;
+	cursor: pointer;
+	line-height: 3.0em;
+}
+
+
+.sp:hover{
+	border: solid 1px black;
+}
+
+
+.sphere0{	left: 29.2rem;top: 12rem; background-color: silver;}
+.sphere1{	left: 26.1rem;top: 16.4rem; background-color: silver;}
+.sphere2{	left: 34.2rem;top: 16rem; background-color: silver;}
+.sphere3{	left: 30.4rem;top: 23.2rem; background-color: silver;}
+.sphere4{	left: 25.2rem;top: 29rem; background-color: silver;}
+.sphere5{	left: 35.4rem;top: 29.2rem; background-color: silver;}
+.sphere6{	left: 22rem;top: 38.9rem; background-color: silver;}
+
+
+.sphere0:hover{	background-color: #00BB39;}
+.sphere1:hover{background-color: #FF5BA5;}
+.sphere2:hover{background-color:  #FFD100;}
+.sphere3:hover{	background-color: #00BB39;}
+.sphere4:hover{	background-color: #FF6D15 ;}
+.sphere5:hover{background-color: #FF6313;}
+.sphere6:hover{background-color: #FEB600;}
+.sphere7:hover{	background-color: #E7A342;}
+.sphere8:hover{	background-color: #0F50A2;}
+
+
+.spAction{
+	animation: open 1s linear forwards;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 2px #000;
+	z-index: 5;
+}
+
+/*Открытие шара===========================*/
+ @keyframes open{
+  0%  {width: 6rem;	height: 6rem;;opacity: 0;}
+  /*50%,100%{background-image: url(balls/b1/1.jpeg);}*/
+  100% { width: 45rem;	height: 45rem;left: 30rem;top: 10rem; opacity: 1; }
+} 
+
+/*Падающий снег=============================*/
+
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+ .snow-container{
+ 	background-image: url(wallTree/xtree6.png);
+	background-repeat: no-repeat;
+	width: 100rem;
+	background-size: cover;
+ }
+
+ .tree-container{
+    background-image: url("snow/snowflake.png"), url("snow/snowflake2.png"), url("snow/snowflake3.png");
+    animation: snow 20s linear infinite;
+
+ }
+
+@media screen and (min-width: 790px) {
+	.tree-container{height: 62.5rem;}
+	.snow-container{width: 79rem;}
+	.sp{font-size: 30px; line-height: 2em;}
+
+	.sphere0{left: 47.2rem;top: 12.9rem;width: 4.5rem;height: 4.5rem;}
+	.sphere1{left: 56.5rem;top: 19rem;width: 4.5rem;height: 4.5rem;}
+	.sphere2{left: 47.9rem;top: 30.5rem;width: 5.5rem;height: 5.5rem;}
+	.sphere3{left: 59.3rem;top: 36.2rem;width: 4.5rem;height: 4.5rem;}
+	.sphere4{left: 37.6rem;top: 41.3rem;width: 5rem;height: 5rem;}
+	.sphere5{left: 43.7rem;top: 48.9rem;width: 5.5rem;height: 5.5rem;}
+	.sphere6{left: 49.5rem;top: 0.1rem;width: 5.5rem;height: 5.5rem;}
+
+
+	.salut{width: 13rem;height: 13rem;}
+
+	.salut1{left :2rem;	top: 2rem;}
+	.salut2{left :40rem;top: 2rem;}
+	.salut3{left :40rem;top: 25rem;}
+	.salut4{left :14rem;top: 24rem;}
+}
+
+@media screen and (min-width: 1270px) {
+	.tree-container{height: 64rem;}
+	.snow-container{width: 80rem;}
+	.sp{font-size: 30px; line-height: 2.2em;}
+
+	.sphere0{left: 48.3rem;top: 13.1rem;width: 5.0rem;height: 5.0rem;}
+	.sphere1{left: 57.4rem;top: 19.6rem;width: 5.0rem;height: 5.0rem;}
+	.sphere2{left: 49rem;top: 31.5rem;width: 6.0rem;height: 6.0rem;}
+	.sphere3{left: 60.5rem;top: 37rem;width: 5.0rem;height: 5.0rem;}
+	.sphere4{left: 38rem;top: 42.3rem;width: 6.0rem;height: 6.0rem;}
+	.sphere5{left: 44.4rem;top: 49.9rem;width: 6.5rem;height: 6.5rem;}
+	.sphere6{left: 49.7rem;top: 0.1rem;width: 6.5rem;height: 6.5rem;}
+
+	.salut{width: 18rem;height: 12rem;}
+
+	.salut1{left :2rem;	top: 2rem;}
+	.salut2{left :50rem;top: 2rem;}
+	.salut3{left :50rem;top: 30rem;}
+	.salut4{left :15rem;top: 33rem;
+	}	
+}
+
+
+@media screen and (min-width: 1320px) {
+	.tree-container{height: 47.968rem;}
+	.snow-container{width: 84.9rem;}
+	.sp{font-size: 30px; line-height: 2.2em;}
+
+	.sphere0{left: 37.2rem;top: 10.4rem;width: 4.5rem;height: 4.5rem;}
+	.sphere1{left: 44.3rem;top: 15.2rem;width: 4.5rem;height: 4.5rem;}
+	.sphere2{left: 37.7rem;top: 24.4rem;width: 5rem;height: 5rem;}
+	.sphere3{left: 46.7rem;top: 28.9rem;width: 4.5rem;height: 4.5rem;}
+	.sphere4{left: 29.3rem;top: 33rem;width: 5rem;height: 5rem;}
+	.sphere5{left: 34.5rem;top: 39rem;width: 5rem;height: 5rem;}
+	.sphere6{left: 38.4rem;top: 0.1rem;width: 6rem;height: 6rem;}
+
+	.salut{width: 18rem;height: 12rem;}
+
+	.salut1{left :2rem;	top: 2rem;}
+	.salut2{left :50rem;top: 2rem;}
+	.salut3{left :50rem;top: 30rem;}
+	.salut4{left :15rem;top: 33rem;}
+} 
+
+@media screen and (min-width: 1359px) {
+	.tree-container{height: 47.968rem;}
+	.snow-container{width: 84.9rem;}
+	.sp{font-size: 30px; line-height: 2.2em;}
+
+	.sphere0{left: 37.2rem;top: 10.4rem;width: 4.5rem;height: 4.5rem;}
+	.sphere1{left: 44.3rem;top: 15.2rem;width: 4.5rem;height: 4.5rem;}
+	.sphere2{left: 37.7rem;top: 24.4rem;width: 5rem;height: 5rem;}
+	.sphere3{left: 46.7rem;top: 28.9rem;width: 4.5rem;height: 4.5rem;}
+	.sphere4{left: 29.3rem;top: 33rem;width: 5rem;height: 5rem;}
+	.sphere5{left: 34.5rem;top: 39rem;width: 5rem;height: 5rem;}
+	.sphere6{left: 38.4rem;top: 0.1rem;width: 6rem;height: 6rem;line-height: 3em}
+
+	.salut{width: 18rem;height: 12rem;}
+
+	.salut1{left :2rem;	top: 2rem;}
+	.salut2{left :50rem;top: 2rem;}
+	.salut3{left :50rem;top: 30rem;}
+	.salut4{left :15rem;top: 33rem;}
+}
+
+
+@media screen and (min-width: 1560px) {
+.tree-container{height: 52.45rem;}
+	.snow-container{width: 97.44rem;}
+	.sp{font-size: 30px;line-height: 3em;}
+
+	.sphere0{left: 43.2rem;top: 11.9rem;width: 4.5rem;height: 4.5rem;}
+	.sphere1{left: 51rem;top: 17.4rem;width: 5.0rem;height: 5rem;}
+	.sphere2{left: 43.2rem;top: 28rem;width: 6.0rem;height: 6.0rem;}
+	.sphere3{left: 54rem;top: 33.2rem;width: 5rem;height: 5rem;}
+	.sphere4{left: 34rem;top: 37.9rem;width: 6.0rem;height: 6.0rem;}
+	.sphere5{left: 39.4rem;top: 44.7rem;width: 6rem;height: 6rem;}
+	.sphere6{left: 44.5rem;top: 0.1rem;width: 6.5rem;height: 6.5rem;line-height: 3.5em;}		
+}
+
+
+@media screen and (min-width: 1599px) {
+	.tree-container{height: 56.215rem;}
+	.snow-container{width: 100rem;}
+	.sp{font-size: 30px;line-height: 3em;}
+
+	.sphere0{left: 44.5rem;top: 12.1rem;width: 4rem;height: 4rem;}
+	.sphere1{left: 52.3rem;top: 17.85rem;width: 5.0rem;height: 5rem;}
+	.sphere2{left: 44.5rem;top: 28.7rem;width: 6.0rem;height: 6.0rem;}
+	.sphere3{left: 55.4rem;top: 34rem;width: 5rem;height: 5rem;}
+	.sphere4{left: 34.6rem;top: 38.9rem;width: 6.0rem;height: 6.0rem;}
+	.sphere5{left: 40.9rem;top: 45.7rem;width: 6rem;height: 6rem;}
+	.sphere6{left: 45.6rem;top: 0.1rem;width: 6.5rem;height: 6.5rem;line-height: 3.5em;}		
+
+}
+
+
+@media screen and (min-width: 1880px) {
+	.tree-container{height: 64.9rem;}
+	.snow-container{width: 117.4rem;}
+
+	.sphere0{left: 51.9rem;top: 14.3rem;width: 6.0rem;height: 6.0rem;}
+	.sphere1{left: 62rem;top: 21rem;width: 6.0rem;height: 6.0rem;}
+	.sphere2{left: 53rem;top: 33.9rem;width: 6.1rem;height: 6.1rem;}
+	.sphere3{left: 65.4rem;top: 40rem;width: 6.0rem;height: 6.0rem;}
+	.sphere4{left: 41rem;top: 45.6rem;width: 6.1rem;height: 6.1rem;}
+	.sphere5{left: 48rem;top: 54rem;width: 6.5rem;height: 6.5rem;}
+	.sphere6{left: 54.2rem;top: 0.3rem;width: 6.5rem;height: 6.5rem;}	
+	
+
+	.salut{width: 25rem;height: 20rem;}
+
+	.salut1{left :2rem;	top: 2rem;}
+	.salut2{left :70rem;top: 2rem;}
+	.salut3{left :75rem;top: 30rem;}
+	.salut4{left :15rem;top: 33rem;}
+}	
+
+@media screen and (min-width: 1919px) {
+
+	.tree-container{height: 67.5rem;}
+	.snow-container{width: 119.9rem;}
+
+	.sphere0{	left: 52.5rem;top: 14.7rem;width: 6.0rem;	height: 6.0rem;}
+	.sphere1{	left: 63.1rem;top: 21.6rem;width: 6.0rem;	height: 6.0rem;}
+	.sphere2{	left: 54.4rem;top: 34.5rem;width: 6.0rem;	height: 6.0rem;}
+	.sphere3{	left: 66.9rem;top: 40.7rem;width: 6.0rem;	height: 6.0rem;}
+	.sphere4{	left: 42.2rem;top: 46.6rem;width: 6.0rem;	height: 6.0rem;}
+	.sphere5{	left: 49.4rem;top: 55.0rem;width: 6.5rem;	height: 6.5rem;}
+	.sphere6{	left: 55.3rem;top: 0.3rem;width: 6.5rem;	height: 6.5rem;}	
+	
+
+	.salut{width: 25rem;height: 20rem;}
+
+	.salut1{left :2rem;	top: 2rem;}
+	.salut2{left :70rem;top: 2rem;}
+	.salut3{left :75rem;top: 30rem;}
+	.salut4{left :15rem;top: 33rem;}
+}	
+
+/*Модальное окно==========================================*/
+
+.images-hrefs{
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+
+	background-color: #B76F95;
+	background-image: url(https://vignette.wikia.nocookie.net/shararam-smeshi/images/4/4d/%D0%A1%D0%BD%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D0%BA%D0%9C%D0%B0%D0%B3.png/revision/latest?cb=20160104083017&format=original&path-prefix=ru);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: right;
+
+	padding: 20px;
+	position: absolute;
+	top: 20px;
+	left: 35%;
+
+	border: 2px solid black;
+	width: 30rem;
+	height: 30rem;
+
+	font-size: 20px;
+	font-weight: bold;
+	z-index:15; 
+}
+.images-hrefs input{
+	border-radius: 20px;
+	font-weight: 600;
+	padding: 2px;
+}
+
+.fireworkOff{
+	 transform:scale(1.7);
+	 width: 1rem;
+	 cursor: pointer;
+}
+.button-container{
+	display: flex;
+	justify-content: space-between;
+}
+.button-container button{
+	height: 40px;
+	width: 140px; 
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 17px;
+	cursor: pointer;
+	transition: 0.3s;
+	opacity: 0.8;
+}
+.button-container button:hover{
+	border: solid 2px black;
+	opacity: 1;
+
+}
+.close-button{
+	background-color: #6C757D;
+	border: none;
+}
+.accept-button{
+	background-color: #007BFF;
+	border: none;
+}
+
+.over{
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.overHide{
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  
+  /*background: rgba(0, 0, 0, 0.6);*/
+}
